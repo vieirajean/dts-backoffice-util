@@ -29,16 +29,16 @@ export class FileUtil {
         const urlDownload = window.URL.createObjectURL(new Blob(binaryData, { type: file.type }));
 
         /**Verifica se é ie ou edge, pois o mesmo tem tratamento próprio para arquivos blob */
-        if (navigator.userAgent.toUpperCase().indexOf('.NET') > 0 || navigator.userAgent.toUpperCase().indexOf('EDGE') > 0) {
-            window.navigator.msSaveOrOpenBlob(file, fileName);
-        } else {
+        // if (navigator.userAgent.toUpperCase().indexOf('.NET') > 0 || navigator.userAgent.toUpperCase().indexOf('EDGE') > 0) {
+        //     window.navigator.msSaveOrOpenBlob(file, fileName);
+        // } else {
             downloadLink.href = urlDownload;
             downloadLink.setAttribute('download', fileName);
             document.body.appendChild(downloadLink);
             downloadLink.click();
             window.URL.revokeObjectURL(urlDownload);
             downloadLink.remove();
-        }
+        // }
     }
 
     private static b64toBlob(b64Data: any, contentType?: string, sliceSize?: number): Blob {

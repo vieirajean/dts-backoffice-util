@@ -17,7 +17,7 @@ export class TotvsScheduleExecutionComponent implements OnInit {
     @Input() externalName: string;
     @Input() programEMS5 = false;
     @Input() programVersion = '';
-    @Input() parameters: [];
+    @Input() parameters: [chave: string, valor: any, tipo: string];
     @Input() disabledParams = false;
     @Input() loading = false;
     @Output() endExecution = new EventEmitter();
