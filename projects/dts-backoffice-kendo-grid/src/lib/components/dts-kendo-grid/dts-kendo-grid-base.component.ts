@@ -80,7 +80,7 @@ export abstract class DtsKendoGridBaseComponent {
     @Input('d-data') data: Array<any>;
 
     /** Habilitar ou desabilitar o botão "Carregar Mais Resultados". */
-    @Input('d-show-more-disabled') showMoreDisabled = 'false';
+    @Input('d-show-more-disabled') showMoreDisabled: boolean = false;
 
     /** Habilita a ordenação da coluna ao clicar no cabeçalho. */
     private _sortable: boolean;
@@ -92,7 +92,7 @@ export abstract class DtsKendoGridBaseComponent {
     }
 
     /** Habilita a opção de filtro nas colunas do Grid. */
-    @Input('d-filterable') filterable = false;
+    @Input('d-filterable') filterable: boolean = false;
 
     /** Habilita a opção para agrupamento de colunas. */
     private _groupable: boolean;
