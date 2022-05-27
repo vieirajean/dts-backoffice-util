@@ -1,0 +1,146 @@
+.k-grid-export {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  font-size: 24px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.k-grid-toolbar-hidden {
+  padding: 0;
+  border: 0;
+}
+
+.k-grid-more-actions {
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.k-grid-tag {
+  border-radius: 3px;
+  color: #fff;
+  height: 20px;
+  padding: 2px 8px;
+  word-wrap: break-word;
+  text-align: center;
+  vertical-align: middle;
+  font-family: NunitoSans-Bold, sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.k-grid .margin {
+  margin: 8px 12px !important;
+}
+
+.k-grid div.margin {
+  color: #4a5c60 !important;
+}
+
+.k-grid .po-field-container-content {
+  padding: 0 !important;
+}
+
+.k-grid th {
+  font-family: NunitoSans-Bold, sans-serif;
+}
+
+.k-grid .no-padding {
+  padding: 0;
+}
+
+/* Inicio - Fix edição in-line */
+.k-grid-add-row td,
+.k-grid-edit-row td {
+  padding: 0 !important;
+}
+/* Fim - Fix edição in-line */
+
+.k-grid td.text-right {
+  text-align: right !important;
+}
+
+.k-grid td.text-center {
+  text-align: center !important;
+}
+
+.k-treeview {
+  font-family: NunitoSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #4e5f63;
+}
+
+.k-treeview .k-in.k-state-selected {
+  background-color: transparent;
+  border-color: transparent;
+  color: #159dc0;
+}
+
+.k-treeview .k-i-collapse {
+  padding-right: 25px;
+  font-size: 0px;
+  height: 23px;
+  width: 20px;
+  background-image: url('./../images/arrow-down.svg');
+}
+
+.k-treeview .k-i-expand {
+  padding-right: 25px;
+  font-size: 0px;
+  height: 23px;
+  width: 20px;
+  background: url('./../images/arrow-right.svg') no-repeat;
+}
+
+.k-treeview .k-in.k-state-focused {
+  box-shadow: 0 0 0 0;
+  border-radius: 1px;
+  border: 2px dashed var(--color-secondary);
+  box-sizing: border-box;
+}
+
+.k-treeview .k-in {
+  cursor: pointer;
+}
+
+.sl-tree-drop-hint {
+  width: 17px;
+  margin-left: -12px;
+  border-radius: 1px;
+  border-top: 2px dashed var(--color-secondary);
+}
+
+.sl-max-width {
+  width: 100%;
+}
+
+.sl-align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: NunitoSans;
+  src: url('~@totvs/po-theme/fonts/Nunito_Sans/NunitoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: NunitoSans-Bold;
+  src: url('~@totvs/po-theme/fonts/Nunito_Sans/NunitoSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: NunitoSans-ExtraLight;
+  src: url('~@totvs/po-theme/fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf') format('truetype');
+}
