@@ -103,7 +103,7 @@ export class TotvsScheduleExecutionService {
     }
 
     private transformExecution(type: string, response: any): IExecutionStatus {
-        if (!response || !response.items || response.items.length === 0) { return; }
+        if (!response || !response.items || response.items.length === 0) { return undefined; }
         response = response.items[0];
 
         const execStatus = new ExecutionStatus();

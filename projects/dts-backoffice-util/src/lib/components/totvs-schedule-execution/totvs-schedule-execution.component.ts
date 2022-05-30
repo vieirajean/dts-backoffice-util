@@ -3,6 +3,7 @@ import { PoRadioGroupOption, PoI18nService, PoNotificationService, PoLookupColum
 import { IScheduleParameters, ScheduleParameters } from './totvs-schedule-execution.model';
 import { NgForm } from '@angular/forms';
 import { TotvsScheduleExecutionService } from './totvs-schedule-execution.service';
+import { parseNumber } from '@progress/kendo-angular-intl';
 
 @Component({
     selector: 'app-totvs-schedule-execution',
@@ -223,8 +224,9 @@ export class TotvsScheduleExecutionComponent implements OnInit {
     }
 
     getHourOrMinute(value: string, type: string): number {
-        if (type === 'h') { return +value.substring(0, 2); }
-        if (type === 'm') { return +value.substring(3, 6); }
+        if (type === 'h') { return parseNumber(+value.substring(0, 2)); }
+        if (type === 'm') { return parseNumber(+value.substring(3, 6)); }
+        return 0;
     }
 
     compareHour(hourInit: string, hourFinal: string): boolean {
